@@ -4,6 +4,11 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.google.gson.annotations.SerializedName
 
+/**
+ *  [ImageData]: Data class for Nasa Image Data.
+ *  			Entity class for room db to store Image data locally
+ *
+ */
 @Entity(tableName = "images")
 data class ImageData(
 
@@ -14,7 +19,8 @@ data class ImageData(
 	@field:SerializedName("copyright")
 	val copyright: String?,
 
-	val isFavorite: Boolean,
+	// add new field to get isFavorite
+	var isFavorite: Boolean,
 
 	@field:SerializedName("media_type")
 	val mediaType: String?,

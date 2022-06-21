@@ -12,6 +12,9 @@ import retrofit2.converter.gson.GsonConverterFactory
 import java.io.IOException
 import java.util.concurrent.TimeUnit
 
+/**
+ * [Retrofit]: Get Retrofit Instance
+ */
 object Retrofit {
 
     fun getClient(baseUrl: String = AppConfig.BASE_URL): Retrofit =

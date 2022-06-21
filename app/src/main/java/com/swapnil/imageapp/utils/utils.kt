@@ -3,7 +3,10 @@ package com.swapnil.imageapp.utils
 import java.text.SimpleDateFormat
 import java.util.*
 
-
+/**
+ * [utils] : Utility class
+ *          list of all common function
+ */
 object utils {
 
     fun validate(date: String): Boolean {
